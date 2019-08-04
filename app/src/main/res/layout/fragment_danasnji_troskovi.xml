@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp">
+
+<TextView
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="15dp"
+    android:textSize="15dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Unesi novi trošak: "/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Iznos"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/etAdd"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kategorija"
+            android:layout_marginLeft="20dp"/>
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner">
+
+        </Spinner>
+
+
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginLeft="10dp"
+        android:id="@+id/btn_novi_trosak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dodaj"
+        android:onClick="onAddClicked"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView_lv" />
+
+
+
+
+
+</LinearLayout>
